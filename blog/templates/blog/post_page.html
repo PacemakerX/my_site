@@ -1,55 +1,55 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %} {% load static %} {% block page_styles %}
+<link rel="stylesheet" href="{% static 'blog/styles.css' %}" />
+{% endblock %} {% block title %}Post Page{% endblock %} {% block content %}
+<div class="card-container">
+  <div class="card">
+    <h1>Understanding Django Templates</h1>
+    <p><strong>Author:</strong> John Doe</p>
+    <p><strong>Published:</strong> May 10, 2025</p>
+    <section>
+      <p>
+        Django templates are a powerful way to dynamically generate HTML
+        content. They allow you to use template tags and filters to include
+        dynamic data in your web pages.
+      </p>
+      <p>
+        In this post, we will explore the basics of Django templates, including
+        how to use template inheritance, context variables, and custom filters.
+      </p>
+    </section>
+  </div>
 
-{% block title %}Post Page{% endblock %} 
+  <div class="card">
+    <h1>Getting Started with Django Models</h1>
+    <p><strong>Author:</strong> Jane Smith</p>
+    <p><strong>Published:</strong> June 15, 2025</p>
+    <section>
+      <p>
+        Django models are the foundation of your database structure. They allow
+        you to define the data structure and interact with the database using
+        Python code.
+      </p>
+      <p>
+        In this post, we will cover how to create models, define fields, and use
+        the Django ORM to query the database.
+      </p>
+    </section>
+  </div>
 
-{% block content %}
-<article>
-  <h1>Understanding Django Templates</h1>
-  <p><strong>Author:</strong> John Doe</p>
-  <p><strong>Published:</strong> May 10, 2025</p>
-  <section>
-    <p>
-      Django templates are a powerful way to dynamically generate HTML content.
-      They allow you to use template tags and filters to include dynamic data in
-      your web pages.
-    </p>
-    <p>
-      In this post, we will explore the basics of Django templates, including
-      how to use template inheritance, context variables, and custom filters.
-    </p>
-  </section>
-</article>
-
-<article>
-  <h1>Getting Started with Django Models</h1>
-  <p><strong>Author:</strong> Jane Smith</p>
-  <p><strong>Published:</strong> June 15, 2025</p>
-  <section>
-    <p>
-      Django models are the foundation of your database structure. They allow
-      you to define the data structure and interact with the database using
-      Python code.
-    </p>
-    <p>
-      In this post, we will cover how to create models, define fields, and use
-      the Django ORM to query the database.
-    </p>
-  </section>
-</article>
-
-<article>
-  <h1>Building Forms in Django</h1>
-  <p><strong>Author:</strong> Alex Brown</p>
-  <p><strong>Published:</strong> July 20, 2025</p>
-  <section>
-    <p>
-      Forms are an essential part of web development, and Django provides a
-      robust framework for creating and handling forms.
-    </p>
-    <p>
-      This post will guide you through creating forms, validating user input,
-      and processing form submissions in Django.
-    </p>
-  </section>
-</article>
+  <div class="card">
+    <h1>Building Forms in Django</h1>
+    <p><strong>Author:</strong> Alex Brown</p>
+    <p><strong>Published:</strong> July 20, 2025</p>
+    <section>
+      <p>
+        Forms are an essential part of web development, and Django provides a
+        robust framework for creating and handling forms.
+      </p>
+      <p>
+        This post will guide you through creating forms, validating user input,
+        and processing form submissions in Django.
+      </p>
+    </section>
+  </div>
+</div>
 {% endblock %}
