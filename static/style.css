@@ -1,0 +1,42 @@
+/* Enhanced styles for the 404 page */
+section {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin: 3rem auto;
+  max-width: 700px;
+  font-family: "Arial", sans-serif;
+}
+
+section h1 {
+  font-size: 3rem;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 1.4rem;
+  color: #495057;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+section .btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+section .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
