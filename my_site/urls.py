@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.landing_page, name='home'),
     path('admin/', admin.site.urls),
     path("posts/",include("blog.urls")),
+    path('<path:resource>', views.handle_404, name='handle_404'),
 ]
